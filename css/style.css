@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html body{
+    background-color: #160E2D;
+    color: #C7BDE7;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.light{
+    font-weight: 300;
+}
+.hidden{
+    display: none;
+}
+.bold{
+    font-weight: bold;
+}
+.purple{
+    color: #957AFF;
+}
+.grey{
+    color: rgb(199, 189, 231, 0.77)
+}
+.align-baseline{
+    align-items: baseline;
+}
+.flex{
+    display: flex;
+}
+.align-top{
+    align-items: flex-start;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.align-items{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+    line-height: 80px;
+    margin: 64px 0px 30px 0px;
+}
+h2,h3{
+    font-size: 28px;
+    color: #E2DDF0;
+}
+
+header ol, #work .grid ul{
+    display: flex;
+}
+header{
+    display: flex;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%;
+    top : 4%;
+}
+.logo{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    flex: 1;
+}
+.square{
+    display: inline-block;
+    padding: 20px 20px 20px 7px;
+    margin-left: 7px;
+    background-color:#957AFF
+}
+nav{
+    display: flex;
+}
+ol{
+    align-items: center;
+    gap: 38px;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    color: #957AFF;
+    text-decoration: none;
+}
+main{
+    margin-inline: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+article{
+    width: 100%;
+}
+.introduction-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#introduction, #about-me, #education, #work, #contact-me{
+    min-height: 100vh;
+    display: flex;
+    gap: 83px;
+}
+#introduction figure{
+    width: 325px;
+    margin-right: 30px;
+}
+#about-me figure{
+    width: 268px;
+    position: relative;
+}
+#about-me{
+
+    width: 90%;
+}
+.about-me-content{
+    width: 60%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+figure{
+    width: 20%;
+}
+p{
+    letter-spacing: 0.5px;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+#education{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#education .button-group{
+    width: 170px;
+}
+#education .education-content{
+    width: 73%;
+    flex-direction: column;
+    display: flex;
+}
+#education #stmg-content{
+    display: none;
+}
+#education button{
+    padding: 20px 10px;
+    color:rgb(199, 189, 231, 0.77);
+    font-weight: 400;
+}
+#education button.selected{
+    background-color: #281C4F;
+    color:#957AFF
+}
+
+#work .grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+#work figure{
+    width: 100%;
+    grid-column: 1 / span 12;
+}
+#work .work-description{
+    grid-column: 3 / span 3;
+    background-color: #281C4F;
+}
+#work .work-description ul{
+    display : flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+#work .work-description p {
+    margin-block: 20px;
+}

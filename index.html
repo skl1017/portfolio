@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./js/index.js"></script>
+    <title>Loan RIYANTO</title>
+</head>
+<body>
+    <header>
+        <div class="logo">LOAN<div class="square">R.</div></div>
+        <nav>
+            <ol>
+                <li><a href="#">About Me</a></li>
+                <li><a href=#>Education</a></li>
+                <li><a href=#>Work</a></li>
+                <li><a href=#>Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    
+    <main>
+        <article id="introduction">
+            <div class="flex space-around align-items">
+                <div class="introduction-content">
+                    <p><span class="purple light">Hi, my name is</span></p>
+                    <h1>Loan RIYANTO</h1>
+                    <p>I'm currently at Velizy's IUT, studying for a BA in MMI.
+                    I always liked to create, especially on softwares, and I've always been on computers.</p>
+                </div>
+                <figure>
+                    <img src="./images/emoji.loan.jpeg" alt="loanriyanto">
+                    <figcaption></figcaption>
+                </figure>
+            </div>  
+        </article>
+        
+        <article id="about-me" class="flex column">
+            <h2 class="text-right"><span class="purple">01 - </span>About me</h2>
+            <div class="flex space-between align-top">
+                <figure>
+                    <img src="./images/identite.jpeg" alt="loanriyanto">
+                    <figcaption></figcaption>
+                </figure>
+
+                <div class="about-me-content text-right">
+                   <p>Hi! My name is Loan. I have always been on a computer since I was a child, but since a year ago, I started to gain interest in coding, and it’s only growing.<br><br>
+
+                    I’ve started with <span class="purple">python</span> by enrolling in Coursera's courses. I learned the basics of programming such as dictionaries, lists, and regular expressions.<br>
+                    I then coded in C during a month for the <span class="purple">42 school’s exams.</span> It was really difficult since it’s a low-level language, but it helped me to have a better algorithmic thinking.<br><br>
+
+                    I’m currently learning <span class="purple">HTML, CSS and Javascript</span> and will soon start learning frameworks such as Vue.js and React.<br><br>
+
+                    Outside of coding, I enjoy art, music and Muay Thai. I’m also making 3D things with Blender, you can see my work <a href="#"><span class="purple bold">here.</span></a></p>
+                </div>
+            </div>
+        </article>
+
+        <article id="education">
+            <h2><span class="purple">02 - </span>Education</h2>
+            <div class="flex space-between align-baseline">
+                <div class="button-group flex column">
+                    <button id="mmi-button" class="selected" onclick="displayContent('mmi')" onclick="test()">MMI - Velizy</button>
+                    <button id="stmg-button" onclick="displayContent('stmg')">STMG - Sophie Barat</button>
+                </div>
+                <div class="education-content" id="mmi-content">
+                        <span class="bold">Student in MMI<span class="purple"> @ Institute of Technology of Vélizy</span></span>
+                        <p><span class="grey">2022 - 2025</span></p><br><br>
+                        <p>I’m currently at my first year of BUT MMI (Multimedia and Internet) at the Velizy’s IUT (Institute of technology).<br>
+                        We are studying different subjects such as communication, web development, English, graphism and cinema. All these subjects are linked since we need to be versatile. We will specialize in year 2 either in Web Development or in Graphism, and I'm going to chose web development.</p>
+                </div>
+                <div class="education-content" id="stmg-content">
+                    <span class = "bold">Student in STMG<span class="purple"> @ Lycée Sophie Barat</span></span>
+                    <p><span class="grey">2020 - 2022</span></p><br><br>
+                    <p>During two years, I studied economics, marketing and management. Although I was interested in it first, I progressively started to gain more and more interest in coding.<br>
+                    Even though it's not my thing anymore, I still have some basic knowledge of economics, companies, and how works the world surrounding us.</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="work" class="flex column center ">
+            <h2 class="text-right"><span class="purple">03 - </span>Work</h2>
+            <h2 class="text-center">Some websites I’ve made</h2>
+            <p class="text-center">As part of my learning journey at CodeAcademy to be a full stack developer, I built some websites using what I learned so far.</p>
+            
+            <ul>
+                <li class="grid">
+                    <figure>
+                        <img src="./images/companyHome.png" alt="companyHome-website">
+                        <figcaption></figcaption>
+                    </figure>
+                    <div class="work-description text-right">
+                        <h3>THE VC EXPERIENCE</h3>
+                        <p>Homepage of a fictional company’s website. Fully responsive, featuring flexbox and grid.</p>
+                        <ul>
+                            <li>Mobile</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="grid">
+                    <figure>
+                        <img src="./images/Fotomatic.png" alt="fotomatic-website">
+                        <figcaption></figcaption>
+                    </figure>
+                    <div class="work-description">
+                        <h3>Fotomatic</h3>
+                        <p>Another homepage of an online camera shop.</p>
+                        <ul>
+                            <li>Mobile</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+        <article id="contact-me" class="flex center text-center">
+            <h2 class="text-right"><span class="purple">04 - </span>Contact me</h2>
+            <p>Even though I’m currently studying, I’m still available, and open to any requests. I’ll answer back with pleasure!</p>
+            <button>Get in touch</button>
+        </article>
+
+
+    </main>
+</body>
+</html>
