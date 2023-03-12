@@ -293,6 +293,7 @@ button{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     opacity: 0;
     transition: opacity 0.7s !important;
     z-index: 2;
