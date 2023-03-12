@@ -30,10 +30,6 @@ window.onload = (event) =>{
     const menu = document.querySelector('body .header-container .nav-mobile');
     const header = document.querySelector('.logo-container');
     const button = document.querySelector('.header-container button');
-
-    console.log(menu);
-    console.log(header);
-    console.log(button);
     
     button.addEventListener('click', (event) =>{
         menu.classList.toggle('show');
@@ -43,12 +39,10 @@ window.onload = (event) =>{
 
     window.onscroll = (event) =>{
         var y = window.scrollY;
-        console.log(y);
         if (y > 68){
             header.classList.add('header-hidden');
             if (menu.classList.contains('show')){
                 menu.classList.remove('show');
-                console.log('caca');
             }
 
         }

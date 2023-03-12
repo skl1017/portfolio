@@ -408,8 +408,13 @@ button{
     #work .work-description-container{
         display: block;
     }
-    #work > ul > li:nth-child(1) > div:nth-child(1){
-        background-image: url("./images/companyHome.png");
+    #work .work-description{
+       
+/* Created with https://www.css-gradient.com */
+background: #281C4F;
+background: -webkit-linear-gradient(bottom right, #281C4F, #3D3166);
+background: -moz-linear-gradient(bottom right, #281C4F, #3D3166);
+background: linear-gradient(to top left, #281C4F, #3D3166);
     }
 }
 @media only screen and (max-width: 433px){
