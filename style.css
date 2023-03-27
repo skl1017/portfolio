@@ -326,12 +326,17 @@ button{
     'GRAD' 0,
     'opsz' 100;
   }
-  a.material-symbols-outlined.md-36 {
+  .material-symbols-outlined.md-36{
     font-size: 36px;
     transition: all 0.5s;
     color: #efebf9;
   }
-  a.material-symbols-outlined.md-36:hover {
+  .material-symbols-outlined.md-56{
+    font-size: 56px;
+    transition: all 0.5s;
+    color: #efebf9;
+  }
+  .material-symbols-outlined.md-36:hover, .material-symbols-outlined.md-56:hover {
     scale: 120%;
     transition: all 0.5s;
     color: #957AFF;
@@ -379,7 +384,17 @@ button{
     transition: ease-out 1s;
 }
 
-
+#back-top{
+    position: fixed;
+    top: 80%;
+    left: 93%;
+    transition: all 0.5s;
+}
+#back-top.hide{
+    top: 80%;
+    left: 100%;
+    transition: all 0.5s;
+}
 @media only screen and (max-width: 1070px){
     main{
         width: 84%;

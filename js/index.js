@@ -30,6 +30,7 @@ window.onload = (event) =>{
     const menu = document.querySelector('body .header-container .nav-mobile');
     const header = document.querySelector('.logo-container');
     const button = document.querySelector('.header-container button');
+    const backTop = document.querySelector('#back-top');
     
     button.addEventListener('click', (event) =>{
         menu.classList.toggle('show');
@@ -66,6 +67,12 @@ window.onload = (event) =>{
         else{
             menu.style.display = 'flex';
         }
+        if (y < 150){
+            backTop.classList.add('hide');
+        }
+        else{
+            backTop.classList.remove('hide');
+        }
     }
 
     const observer = new IntersectionObserver(callback); // création d'un observer avec l'API Intersection Observer qui va appeler la fonction callback 
@@ -90,9 +97,6 @@ elements.forEach((element) => {console.log(element);
   observer.observe(element);
    // va observer chaque élément et va appeler 'observer' à chaque fois 
 });
-    
-    
-    
 }
 
 
